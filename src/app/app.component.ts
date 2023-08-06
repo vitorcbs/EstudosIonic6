@@ -5,14 +5,23 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+  public menuApp = [
+    { title: 'Home', url: 'home', icon: 'home'}
+  ]
+
+  public menuComponentes = [
+    { title: 'Action-sheet', url: 'action-sheet', icon: 'albums' },
+    { title: 'Accordion', url: 'accordion', icon: 'chevron-down' },
+    { title: 'Alert', url: 'alert', icon: 'warning' },
+    { title: 'Buttons', url: 'button', icon: 'dice' },
+    { title: 'Card', url: 'card', icon: 'card' },
+    { title: 'Componentes - JS', url: 'componentjs', icon: 'terminal' },
+    { title: 'Componentes - Tags', url: 'tags', icon: 'bookmark' },
+    { title: 'DateTime', url: 'datetime', icon: 'calendar' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  public menuNatives = [
+    { title: 'Camera', url: 'camera', icon: 'camera' },
+  ];
   constructor() {}
 }

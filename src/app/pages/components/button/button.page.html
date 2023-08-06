@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Button</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Default sizes-->
+  <ion-button  size="small" >Size small</ion-button>
+  <ion-button>Default</ion-button>
+  <ion-button  size="large">Size large</ion-button>
+  <br>
+  <br>
+  <!--Anchor-->
+  <ion-button href="home">Botao com ancora para home</ion-button>
+  <br>
+  <br>
+  <!--Colors-->
+  <ion-button color="primary">Cor primaria</ion-button>
+  <br>
+  <ion-button color="secondary">Cor secundaria</ion-button>
+  <br>
+  <ion-button color="tertiary">Cor terciaria</ion-button>
+  <br>
+  <br>
+
+  <!--Expanded-->
+  <ion-button expand="full">Expanded full</ion-button>
+  <br>
+  <ion-button expand="block" color="dark">Expanded block</ion-button>
+  <br>
+  <br>
+
+  <!--Arredondado-->
+  <ion-button shape="round">Shape round</ion-button>
+  <br>
+  <br>
+
+  <!--Fill-->
+  <ion-button fill="outline">Fill outline</ion-button>
+  <br>
+  <br>
+
+  <!--Botao com icone-->
+  <ion-button>
+    Slot start - Ion icon
+    <ion-icon slot="start" name="star"></ion-icon>
+  </ion-button>
+  <br>
+  <ion-button>
+    Slot end - Ion icon
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+  <br>
+  <h2>Icon-only</h2>
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+  <br>
+  <br>
+
+  <!--Botao com acao-->
+  <ion-button (click)="enviar()">Botão com ação</ion-button>
+</ion-content>

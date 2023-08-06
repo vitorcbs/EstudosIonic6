@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tags</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h3>Badge</h3>
+  <ion-item>
+    <ion-badge color="primary" slot="start">11</ion-badge>
+    <ion-label>Meu item</ion-label>
+  </ion-item>
+
+  <h3>Checkbox</h3>
+  <ion-checkbox>Teste</ion-checkbox>
+  <br />
+  <ion-checkbox disabled="true">Teste</ion-checkbox>
+  <br />
+  <ion-checkbox checked="true">Teste</ion-checkbox>
+  <br />
+  <ion-checkbox color="primary">Teste</ion-checkbox>
+
+  <h3>Chips</h3>
+  <ion-chip>Default</ion-chip>
+  <ion-chip [disabled]="true">Disabled</ion-chip>
+  <ion-chip [outline]="true">Outline</ion-chip>
+  <br />
+  <br />
+
+  <!--Com avatar/foto-->
+  <ion-chip>
+    <ion-avatar>
+      <img
+        alt="Silhouette of a person's head"
+        src="https://ionicframework.com/docs/img/demos/avatar.svg"
+      />
+    </ion-avatar>
+    <ion-label>Avatar Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="pin" color="primary"></ion-icon>
+    <ion-label>Icon Chip</ion-label>
+    <ion-icon name="close"></ion-icon>
+  </ion-chip>
+  <br />
+  <br />
+
+  <!--Com cor-->
+  <ion-chip>Default</ion-chip>
+  <ion-chip color="primary">Primary</ion-chip>
+  <ion-chip color="secondary">Secondary</ion-chip>
+  <ion-chip color="tertiary">Tertiary</ion-chip>
+  <ion-chip color="success">Success</ion-chip>
+  <ion-chip color="warning">Warning</ion-chip>
+  <ion-chip color="danger">Danger</ion-chip>
+  <ion-chip color="light">Light</ion-chip>
+  <ion-chip color="medium">Medium</ion-chip>
+  <ion-chip color="dark">Dark</ion-chip>
+  <br />
+  <br />
+
+  <!--ion list-->
+  <h3>List</h3>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>Full Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Full Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Full Lines</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="inset">
+    <ion-item>
+      <ion-label>Inset Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Inset Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Inset Lines</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="none">
+    <ion-item>
+      <ion-label>No Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>No Lines</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>No Lines</ion-label>
+    </ion-item>
+  </ion-list>
+
+<!--Deslizante-->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options slide="end">
+        <ion-item-option>Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item 2</ion-label>
+      </ion-item>
+      <ion-item-options slide="start">
+        <ion-item-option>Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <h3>Progress bar</h3>
+  <ion-progress-bar [value]="progress"></ion-progress-bar>
+  <br>
+  <ion-progress-bar [value]="progress" [buffer]="buffer"></ion-progress-bar>
+</ion-content>
